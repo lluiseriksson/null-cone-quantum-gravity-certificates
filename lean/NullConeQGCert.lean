@@ -390,24 +390,30 @@ theorem fixed_mass_sen_recovery :
     (257 - 45) * 45 = 106 * 90 := by
   decide
 
-/-- Theorem 16: Reflecting AdS energy-band dimension bound (Eq. 5.46):
-    if `dE * w_min <= Z_beta * scale` and `scale^2 <= e_factor * w_min`,
-    then `dE * scale^2 <= e_factor * Z_beta * scale`. -/
+/-- Theorem 16: Reflecting AdS energy-band dimension bound (Eq. 5.46, with
+    `Z_beta = Tr(exp(-beta*(H - E_0)))` shifted to ground energy `E_0`):
+    if `0 < scale`, `dE * w_min <= Z_beta * scale`, and `scale^2 <= e_factor * w_min`,
+    then canceling `scale > 0` yields `dE * scale <= e_factor * Z_beta`. -/
 theorem ads_energy_band_multiplicity_bound (dE w_min Z_beta e_factor scale : Nat)
+    (hs : 0 < scale)
     (hZ : dE * w_min ≤ Z_beta * scale)
     (hinv : scale * scale ≤ e_factor * w_min) :
-    dE * (scale * scale) ≤ e_factor * Z_beta * scale := by
+    dE * scale ≤ e_factor * Z_beta := by
   have h1 : dE * (scale * scale) ≤ dE * (e_factor * w_min) :=
     Nat.mul_le_mul_left dE hinv
   have h2 : dE * (e_factor * w_min) = e_factor * (dE * w_min) := by
     rw [Nat.mul_left_comm]
   have h3 : e_factor * (dE * w_min) ≤ e_factor * (Z_beta * scale) :=
     Nat.mul_le_mul_left e_factor hZ
-  have h4 : e_factor * (Z_beta * scale) = e_factor * Z_beta * scale :=
+  have h4 : e_factor * (Z_beta * scale) = (e_factor * Z_beta) * scale :=
     (Nat.mul_assoc e_factor Z_beta scale).symm
+  have h5 : dE * (scale * scale) = (dE * scale) * scale :=
+    (Nat.mul_assoc dE scale scale).symm
   rw [h2] at h1
-  rw [← h4]
-  exact Nat.le_trans h1 h3
+  have hle : (dE * scale) * scale ≤ (e_factor * Z_beta) * scale := by
+    rw [← h5, ← h4]
+    exact Nat.le_trans h1 h3
+  exact Nat.le_of_mul_le_mul_right hle hs
 
 /-- Theorem 17: Spatial-topology handle-filling null-state criterion (Eq. 5.70):
     if `m > d_D` and `rank G <= d_D`, then `nullity = m - rank G >= 1`. -/
