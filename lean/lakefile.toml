@@ -1,0 +1,5 @@
+name = "NullConeQGCert"
+defaultTargets = ["NullConeQGCert"]
+
+[[lean_lib]]
+name = "NullConeQGCert"

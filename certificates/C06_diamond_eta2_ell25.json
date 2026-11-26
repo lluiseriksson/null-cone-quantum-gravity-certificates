@@ -1,0 +1,67 @@
+{
+  "schema": "NULLCONE-QG-CERT-1.0",
+  "id": "C06_diamond_eta2_ell25",
+  "mode": "causal_diamond_finiteness",
+  "ell_over_lp": [
+    25,
+    1
+  ],
+  "cutoff_eps": [
+    1,
+    20
+  ],
+  "boost_rapidity_eta": [
+    2,
+    1
+  ],
+  "s_star_interval": [
+    [
+      21756181,
+      10000
+    ],
+    [
+      10878091,
+      5000
+    ]
+  ],
+  "boost_ratio_interval": [
+    [
+      41997,
+      100000
+    ],
+    [
+      20999,
+      50000
+    ]
+  ],
+  "boost_suppression_tanh2_interval": [
+    [
+      29001,
+      50000
+    ],
+    [
+      58003,
+      100000
+    ]
+  ],
+  "op_norm_bound": [
+    1,
+    1
+  ],
+  "cycle_area_variance": [
+    1,
+    400
+  ],
+  "vacuum_deformation_delta_eta": [
+    1,
+    4
+  ],
+  "cycle_trace_weight": [
+    1,
+    10
+  ],
+  "uncut_amplitude_ZX": [
+    1,
+    100
+  ]
+}

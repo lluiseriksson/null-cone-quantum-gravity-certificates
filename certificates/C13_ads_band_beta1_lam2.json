@@ -1,0 +1,60 @@
+{
+  "schema": "NULLCONE-QG-CERT-1.0",
+  "id": "C13_ads_band_beta1_lam2",
+  "mode": "ads_trace_and_topology",
+  "submode": "ads_energy_band",
+  "inverse_temp_beta": [
+    1,
+    1
+  ],
+  "energy_cutoff_Lambda": [
+    2,
+    1
+  ],
+  "partition_Z_beta": [
+    5,
+    2
+  ],
+  "claimed_dim_upper_bound": 18,
+  "claimed_band_prob_p": [
+    1,
+    2
+  ],
+  "sample_state_weights": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ]
+  ],
+  "diamond_weights_va": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      6
+    ]
+  ],
+  "band_indicator": [
+    1,
+    0,
+    0
+  ]
+}

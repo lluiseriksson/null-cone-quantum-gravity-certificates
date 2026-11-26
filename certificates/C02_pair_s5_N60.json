@@ -1,0 +1,39 @@
+{
+  "schema": "NULLCONE-QG-CERT-1.0",
+  "id": "C02_pair_s5_N60",
+  "mode": "graviton_pair_creation",
+  "s": [
+    5,
+    1
+  ],
+  "truncation_N": 60,
+  "nonpert_re_interval": [
+    [
+      1039,
+      50000
+    ],
+    [
+      1073,
+      50000
+    ]
+  ],
+  "nonpert_im_interval": [
+    [
+      -49,
+      3125
+    ],
+    [
+      -3,
+      200
+    ]
+  ],
+  "tail_modulus_upper_bound": [
+    1,
+    3000
+  ],
+  "perturbative_im_coeff_HN_over_s3": [
+    15117092380124150817026911,
+    403779673532384654204700000
+  ],
+  "verify_cauchy_schwarz": false
+}

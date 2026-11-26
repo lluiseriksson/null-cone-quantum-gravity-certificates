@@ -1,0 +1,9 @@
+[project]
+name = "null-cone-quantum-gravity-certificates"
+version = "1.0.0"
+description = "Formal Certification of Null-Cone Algebraic Quantum Gravity (arXiv:2611.34924)"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

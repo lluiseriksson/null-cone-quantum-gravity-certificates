@@ -1,0 +1,79 @@
+{
+  "schema": "NULLCONE-QG-CERT-1.0",
+  "id": "C01_pair_s2_N40",
+  "mode": "graviton_pair_creation",
+  "s": [
+    2,
+    1
+  ],
+  "truncation_N": 40,
+  "nonpert_re_interval": [
+    [
+      1871,
+      50000
+    ],
+    [
+      273,
+      6250
+    ]
+  ],
+  "nonpert_im_interval": [
+    [
+      -2599,
+      20000
+    ],
+    [
+      -12369,
+      100000
+    ]
+  ],
+  "tail_modulus_upper_bound": [
+    1,
+    320
+  ],
+  "perturbative_im_coeff_HN_over_s3": [
+    2078178381193813,
+    3885768332409600
+  ],
+  "verify_cauchy_schwarz": true,
+  "cs_phi": [
+    [
+      1,
+      2
+    ],
+    [
+      -3,
+      5
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      7
+    ]
+  ],
+  "cs_psi": [
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      -3,
+      4
+    ],
+    [
+      1,
+      7
+    ]
+  ],
+  "cs_claimed_abs_sum": [
+    40081,
+    58800
+  ]
+}

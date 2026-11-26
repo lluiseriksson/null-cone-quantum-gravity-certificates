@@ -1,0 +1,18 @@
+{
+  "schema": "NULLCONE-QG-CERT-1.0",
+  "id": "C10_footnote23_x_half",
+  "mode": "mts_sen_entropy",
+  "submode": "footnote23_clock",
+  "scaled_radius_x": [
+    1,
+    2
+  ],
+  "clock_ratio_q": [
+    2,
+    5
+  ],
+  "entropy_log_coeff": [
+    1,
+    3
+  ]
+}

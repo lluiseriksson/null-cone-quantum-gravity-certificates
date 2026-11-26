@@ -1,0 +1,7 @@
+lean/.lake/
+__pycache__/
+*.pyc
+.pytest_cache/
+paper/*.aux
+paper/*.log
+paper/*.out

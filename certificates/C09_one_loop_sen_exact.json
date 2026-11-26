@@ -1,0 +1,28 @@
+{
+  "schema": "NULLCONE-QG-CERT-1.0",
+  "id": "C09_one_loop_sen_exact",
+  "mode": "mts_sen_entropy",
+  "submode": "one_loop_sen",
+  "gauss_bonnet_prefactor": [
+    53,
+    720
+  ],
+  "sphere_euler_integral_over_pi": 8,
+  "opening_angle_factor_over_pi": 8,
+  "log_sb_half_power": [
+    1,
+    2
+  ],
+  "measure_shift": [
+    1,
+    2
+  ],
+  "clock_ratio_q": [
+    257,
+    302
+  ],
+  "fixed_mass_sen_coeff": [
+    106,
+    45
+  ]
+}
